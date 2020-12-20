@@ -4,6 +4,7 @@
       <discription />
       <progressbar/>
       <referal/>
+      <adaptiveGroup/>
       <!-- <button @click="ADD_ST">+</button> <button @click="DIS_ST">-</button> -->
     </div>
   </div>
@@ -13,6 +14,7 @@
 import discription from "./components/discription";
 import progressbar from "./components/progressbar";
 import referal from "./components/referal";
+import adaptiveGroup from "./components/adaptive-group";
 
 import { mapActions } from "vuex";
 export default {
@@ -20,7 +22,8 @@ export default {
   components: {
     discription,
     progressbar,
-    referal
+    referal,
+    adaptiveGroup
   },
   methods: {
     ...mapActions(["ADD_ST", "DIS_ST"])

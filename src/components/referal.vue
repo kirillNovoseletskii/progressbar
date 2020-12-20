@@ -46,6 +46,7 @@ export default {
         padding: 13px 12px;
         margin: 0;
         width: 100%;
+        border-radius: 3px;
         &:focus{
             outline: none
         }
@@ -62,6 +63,15 @@ export default {
             color: #0f4fb6;
             outline: none
         }
+    }
+}
+@media only screen and (max-width: 768px){
+    .main__referal{
+        margin-bottom: 16px;
+    }
+    .copy-btn{
+        left: 0;
+        bottom: -60px;
     }
 }
 </style>

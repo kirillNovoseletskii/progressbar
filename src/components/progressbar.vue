@@ -5,8 +5,8 @@
                 <svg style="margin-left:-5px;margin-right:8px;" width="8" height="8" fill="none"><circle cx="50%" cy="50%" r="3.5"  :fill="i.color" /></svg> {{i.title}}
             </span>
         </div>
-        <svg width="603" height="50" viewBox="0 0 603 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.5 8H583.5" stroke="#E8E6EC" stroke-width="2"/>	
+        <svg width="613" height="50" viewBox="0 0 613 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="main__progressbar-df"  stroke="#E8E6EC" stroke-width="2"/>	
             <path class="main__progressbar-line" :stroke="lineColor" stroke-width="2" :d="lineWigth()"/>
             
             <circle cx="9" cy="8" r="7" fill="white" :stroke="circleColor[0]" stroke-width="2"/>
@@ -24,7 +24,6 @@
                 <text x="565" y="46" class="main__progressbar-txt" fill="black">{{data.currentValue}}/20</text>
             </g>
         </svg>
-
     </div>
 </template>
 
@@ -74,6 +73,11 @@ export default {
 
 <style lang="scss" scoped>
     .main__progressbar{
+        display: flex;
+        flex-direction: column;
+        &-df{
+            d: path("M0.5 8H583.5");
+        }
         &-titles{
            display: flex;
            padding-left: 90px; 
@@ -103,6 +107,11 @@ export default {
         &-txt{
             font-family: 'Montserrat', sans-serif;
             font-size: 15px;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .main__progressbar{
+            display: none;
         }
     }
 </style>

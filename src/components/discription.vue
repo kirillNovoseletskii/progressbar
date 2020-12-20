@@ -37,7 +37,6 @@ $main-font: 'Roboto', sans-serif;
            }
            .main__txt{
                 font-family: 'Montserrat', sans-serif;
-                margin-top: 16px;
                 font-size: 14px;
             }
        } 
