@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    currentValue: 10,
+    currentValue: 15,
     badges: [
       {
         title: 'Founder',

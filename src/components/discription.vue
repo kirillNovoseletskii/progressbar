@@ -15,16 +15,31 @@ $main-font: 'Roboto', sans-serif;
     box-sizing: border-box;
     color: $main-color;
     margin-bottom: 38px;
-    h2{
+    .main__title{
         font-family: $main-font;
         font-size: 24px;
     }
-    p{
-        // word-spacing: 5px;
+    .main__txt{
         font-family: 'Montserrat', sans-serif;
         margin-top: 35px;
         font-size: 14px;
-        // line-height: 24px;
     }
 }
+@media only screen and (min-width: 768px) {
+        
+       .main__discr{
+           margin-bottom: 16px;
+           box-sizing: border-box;
+           color: $main-color;
+           .main__title{
+               font-size: 20px;
+               margin: 0;
+           }
+           .main__txt{
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+       } 
+    }
 </style>
