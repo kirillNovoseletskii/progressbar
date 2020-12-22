@@ -5,7 +5,7 @@
       <progressbar/>
       <referal/>
       <adaptiveGroup/>
-      <!-- <button @click="ADD_ST">+</button> <button @click="DIS_ST">-</button> -->
+      
     </div>
   </div>
 </template>
@@ -24,9 +24,6 @@ export default {
     progressbar,
     referal,
     adaptiveGroup
-  },
-  methods: {
-    ...mapActions(["ADD_ST", "DIS_ST"])
   }
 }
 </script>
